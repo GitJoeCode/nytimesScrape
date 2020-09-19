@@ -10,6 +10,7 @@ var app = express();
 
 // Routes
 var routes = require("./routes");
+//random comment
 
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
@@ -29,7 +30,13 @@ app.use(routes);
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 // Connect to MongoDB
-mongoose.connect(MONGODB_URI);
+mongoose.connect(MONGODB_URI)
+.then(function() {
+  console.log("connected")
+})
+.catch(function(err){
+  console.log(err)
+})
 
 // Listen on port
 app.listen(PORT, function() {
