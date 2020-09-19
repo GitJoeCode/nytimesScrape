@@ -1,0 +1,37 @@
+{
+  "name": "news_scraper",
+  "version": "1.0.0",
+  "description": "homework - week 18 - news scraper with mongoose and cheerio",
+  "main": "server.js",
+  "dependencies": {
+    "array-flatten": "^3.0.0",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "content-disposition": "^0.5.3",
+    "destroy": "^1.0.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "finalhandler": "^1.1.2",
+    "merge-descriptors": "^1.0.1",
+    "methods": "^1.1.2",
+    "mongoose": "^5.10.6",
+    "path-to-regexp": "^6.1.0",
+    "utils-merge": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loraxgirl/news_scraper.git"
+  },
+  "author": "Krista Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loraxgirl/news_scraper/issues"
+  },
+  "homepage": "https://github.com/loraxgirl/news_scraper#readme"
+}
